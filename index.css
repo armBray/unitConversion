@@ -1,3 +1,146 @@
-body {
+:root{
+    --back : #3D3D3D;
+    --upper-0 : #6943FF;
+    --upper-1 : #B295FF;
+    --lower : #1F2937;
+    --card-0 : #273549;
+    --card-1 : #CCC1FF;
+    --card-2 : #FFFFFF;
+}
+
+* {
     margin: 0;
+}
+
+body {
+    background-color: var(--back);
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.upper {
+    background-color: var(--upper-0);
+    
+    width: 500px;
+    padding: 1rem;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    row-gap: 1rem;
+}
+
+h1 {
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 38px;
+    letter-spacing: -0.03em;
+    text-align: center;
+
+    color: white;
+}
+
+input {
+    font-family: Inter;
+    font-size: 58px;
+    font-weight: 800;
+    letter-spacing: 0em;
+    text-align: center;    
+
+    width: 117px;
+    padding: 0.5rem 0;
+
+    background-color: var(--upper-0);
+    border: solid 2px #B295FF;
+    border-radius: 5px;
+
+    color: white;
+
+}
+
+button {
+    width: 117px;
+    height: 42px;
+    top: 209px;
+    left: 217px;
+    padding: 9px 27.5px;
+
+    border: solid 1px white;
+    border-radius: 5px;
+
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    color: var(--back);
+}
+
+.lower {
+    background-color: var(--lower);
+
+    width: 500px;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    row-gap: 1rem;
+
+}
+
+.card {
+    width: 500px;
+    padding: 1rem 0;
+    border-radius: 4.68px 0px 0px 0px;
+
+    background-color: var(--card-0);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    row-gap: 1rem;
+}
+
+h2 {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    color: var(--card-1);
+}
+
+p {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    color: white;
 }
